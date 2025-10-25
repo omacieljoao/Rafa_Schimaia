@@ -41,10 +41,10 @@
 }
 
 .header {
+  position: relative;
   display: flex;
   height: 700px;
   background-image: linear-gradient(to top, #f491b4, #faefe6);
-  border-bottom: 7px solid background-image;
 }
 
 .header__image {
@@ -125,7 +125,7 @@ h4 {
 .card {
   background-color: #e6cfb8;
   height: 400px;
-  width: 90%;
+  width: 270px;
   margin: auto;
   border-radius: 15px;
   border: 2px solid #faefe6;
@@ -156,18 +156,28 @@ h4 {
 }
 
 .service {
+  color: #393838;
   text-align: center;
   font-family: arial;
   font-weight: 100;
-  font-size: 9px;
-  /* border-bottom: 1px dashed rgb(175, 118, 128); */
-  width: 100%;
+  font-size: 12px;
+  width: 90%;
   background: linear-gradient(180deg, #ffd6e0 0%, #f37ba3 100%);
-  text-decoration-style: dashed;
+  text-decoration: none;
+  /* height: 25px; */
+  padding: 6px 0;
+  border-radius: 20px;
+  margin: auto;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.1);
 }
 
 .why {
-  height: 600px;
+  height: 500px;
   background: linear-gradient(135deg, #faefe6, #f9d5e6);
   display: flex;
   padding: auto;
@@ -175,16 +185,17 @@ h4 {
 }
 
 .why__image {
-  width: 80%;
-  height: 90%;
-  margin: 5vh 5vh 0;
+  width: 300px;
+  height: 300px;
+  margin: 100px 5vh 0;
   border-radius: 10px;
   box-shadow: 10px 10px 10px pink;
+  border-radius: 100%;
 }
 
 .why__title {
   font-size: 40px;
-  margin: 10px 0 0;
+  margin: 50px 0 0;
 }
 
 .why__container {
@@ -296,4 +307,26 @@ h4 {
   justify-content: space-evenly;
   width: 30%;
   height: 100%;
+}
+
+@media (max-width: 1150px) {
+  .header {
+    height: 500px;
+  }
+
+  .header__image {
+    position: absolute;
+    width: 100%;
+  }
+  .header__container {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    padding-left: 200px;
+  }
+
+  .cards__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
