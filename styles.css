@@ -171,7 +171,7 @@ h4 {
   background: linear-gradient(135deg, #faefe6, #f9d5e6);
   display: flex;
   padding: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .why__image {
