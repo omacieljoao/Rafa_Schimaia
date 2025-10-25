@@ -42,7 +42,7 @@
 
 .header {
   display: flex;
-  height: 100vh;
+  height: 700px;
   background-image: linear-gradient(to top, #f491b4, #faefe6);
   border-bottom: 7px solid background-image;
 }
@@ -124,7 +124,7 @@ h4 {
 
 .card {
   background-color: #e6cfb8;
-  height: 70vh;
+  height: 400px;
   width: 90%;
   margin: auto;
   border-radius: 15px;
@@ -167,14 +167,16 @@ h4 {
 }
 
 .why {
-  height: 100vh;
+  height: 600px;
   background: linear-gradient(135deg, #faefe6, #f9d5e6);
   display: flex;
+  padding: auto;
+  justify-content: space-around;
 }
 
 .why__image {
   width: 80%;
-  height: 70%;
+  height: 90%;
   margin: 5vh 5vh 0;
   border-radius: 10px;
   box-shadow: 10px 10px 10px pink;
@@ -198,7 +200,7 @@ h4 {
     "img title "
     "img content ";
   align-items: start;
-  height: 20%;
+  height: 100px;
 }
 
 .why__grid__title {
@@ -255,9 +257,9 @@ h4 {
 }
 
 .footer__logo {
-  height: 23vh;
+  height: 140px;
   margin-left: 15%;
-  margin-top: 20px;
+  margin-top: 10px;
   position: absolute;
   left: 10px;
   overflow: hidden;
