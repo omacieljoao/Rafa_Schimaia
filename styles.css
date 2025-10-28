@@ -169,7 +169,7 @@ h4 {
   font-weight: 100;
   font-size: 12px;
   width: 90%;
-  background: linear-gradient(180deg, #ffd6e0 0%, #f37ba3 100%);
+  background: linear-gradient(180deg, #ffd6e0 0%, #faefe6 100%);
   text-decoration: none;
   padding: 6px 0;
   border-radius: 20px;
@@ -407,7 +407,7 @@ h4 {
     width: 70%;
   }
 }
-@media (max-width: 625px) {
+@media (max-width: 640px) {
   .why {
     height: 650px;
   }
@@ -418,15 +418,26 @@ h4 {
     width: 220px;
   }
   .why {
-    height: 820px;
+    /* height: 820px; */
   }
   .why__grid {
-    display: inline-block;
+    /* display: inline-block; */
   }
-  .grid_fix {
+  /* .grid_fix {
     margin: 0;
-  }
+  } */
   .div2 {
     width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .why {
+    height: 800px;
+  }
+  .why__grid__img {
+    margin: auto;
+  }
+  .why__grid {
+    margin-bottom: 60px;
   }
 }
