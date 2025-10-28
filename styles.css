@@ -22,6 +22,7 @@
 .page {
   color: #393838;
   font-family: "Comfortaa", sans-serif;
+  background-color: black;
 }
 
 .wpp__button {
@@ -41,15 +42,21 @@
 }
 
 .header {
+  overflow: hidden;
   position: relative;
   display: flex;
   height: 700px;
   background-image: linear-gradient(to top, #f491b4, #faefe6);
 }
 
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .header__image {
-  height: 100%;
-  width: 80%;
+  margin-left: 100px;
 }
 .header__container {
   display: flex;
@@ -66,7 +73,6 @@
 }
 
 .header__content {
-  font-family: "Quicksand", sans-serif;
   margin-top: 15%;
   padding: 0;
 }
@@ -110,7 +116,7 @@ h4 {
 }
 
 .cards__subtitle {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 30px;
 }
 .cards__grid {
@@ -152,7 +158,7 @@ h4 {
 }
 
 .card p {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .service {
@@ -181,7 +187,7 @@ h4 {
   background: linear-gradient(135deg, #faefe6, #f9d5e6);
   display: flex;
   padding: auto;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .why__image {
@@ -224,7 +230,7 @@ h4 {
   grid-area: img;
   width: 30px;
   height: 30px;
-  margin: auto;
+  margin: auto 15px;
   background: linear-gradient(to top right, #f6956d, #f491b4);
   border-radius: 10px;
   padding: 5px;
@@ -233,7 +239,7 @@ h4 {
 
 .why__grid__content {
   grid-area: content;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
 }
 
@@ -317,7 +323,9 @@ h4 {
 
   .header__image {
     position: absolute;
-    width: 100%;
+    margin-left: 0;
+    height: 480px;
+    width: 500px;
   }
   .header__container {
     position: relative;
@@ -343,22 +351,32 @@ h4 {
 
 @media (max-width: 750px) {
   .header {
+    position: relative;
     height: 500px;
     overflow: hidden;
   }
 
-  .header__container {
-    width: 100%;
-    position: relative;
-    margin: 70px 0;
-    display: inline-block;
-    padding: 0;
-    z-index: 2;
-  }
   .header__image {
-    width: 150%;
-    height: 90%;
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    transform: translateX(calc(-50% + 40px));
+    max-width: 300px;
+    height: 300px;
+    z-index: 1;
+    pointer-events: none;
+    object-fit: contain;
   }
+
+  .header__container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 70px 0;
+    padding: 0 16px;
+    text-align: center;
+  }
+
   .header__content {
     margin-top: 20px;
     padding: 0 5px;
