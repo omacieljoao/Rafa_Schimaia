@@ -46,7 +46,7 @@
   position: relative;
   display: flex;
   height: 700px;
-  background-image: linear-gradient(to top, #f491b4, #faefe6);
+  background-image: linear-gradient(to top, #fface2, #faefe6);
 }
 
 .inter {
@@ -130,7 +130,7 @@ h4 {
 
 .card {
   background-color: #e6cfb8;
-  height: 400px;
+  height: 460px;
   width: 270px;
   margin: auto;
   border-radius: 15px;
@@ -240,9 +240,11 @@ h4 {
 .why__grid__content {
   grid-area: content;
   font-family: "Inter", sans-serif;
-  margin: 0;
 }
 
+.grid_fix {
+  margin-top: 50px;
+}
 .last__why__div {
   margin: 10px;
   background-color: #faefe6;
@@ -271,14 +273,20 @@ h4 {
 .footer {
   background-color: black;
   height: 150px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__logo {
-  height: 140px;
-  margin-left: 15%;
-  margin-top: 10px;
+  height: 400px;
+  margin-left: 10%;
   position: absolute;
   left: 10px;
+  bottom: -150px;
   overflow: hidden;
 }
 
@@ -288,10 +296,11 @@ h4 {
   color: white;
   font-size: 10px;
   background-color: black;
+  margin-top: 20px;
 }
 
 .footer_img {
-  height: 30px;
+  height: 50px;
   margin: 0;
   position: relative;
   z-index: 2;
@@ -339,13 +348,16 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
   }
   .why {
-    height: 530px;
+    height: 550px;
   }
 }
 
 @media (max-width: 980px) {
   .why__image {
     display: none;
+  }
+  .footer__logo {
+    left: -80px;
   }
 }
 
@@ -385,26 +397,36 @@ h4 {
     display: flex;
     flex-direction: column;
   }
-  .why {
-    height: 600px;
-  }
   .why__grid {
     margin-top: 20px;
   }
   .footer__logo {
-    left: 0;
     margin-left: 0;
+  }
+  .div2 {
+    width: 70%;
+  }
+}
+@media (max-width: 625px) {
+  .why {
+    height: 650px;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .card {
     width: 220px;
   }
   .why {
-    height: 850px;
+    height: 820px;
   }
   .why__grid {
     display: inline-block;
+  }
+  .grid_fix {
+    margin: 0;
+  }
+  .div2 {
+    width: 100%;
   }
 }
